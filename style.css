@@ -1,0 +1,482 @@
+body {
+  font-family: "Dosis", sans-serif;
+  font-weight: 500;
+}
+
+.imgbox {
+  overflow: hidden;
+}
+.imgbox img {
+  width: 100%;
+}
+
+section {
+  padding: 50px 0;
+  overflow: scroll;
+}
+
+header {
+  padding: 25px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: #212529;
+}
+header .imgbox img {
+  width: 190px;
+}
+header .imgbox img:hover {
+  cursor: pointer;
+}
+header nav a {
+  color: #d1cfcf;
+  margin-left: 30px;
+  font-size: 16px;
+}
+header nav a:hover {
+  color: #c0a916;
+  cursor: pointer;
+}
+header .minimenu {
+  display: none;
+  background-color: #080808;
+  border: 4px solid #767373;
+  border-radius: 10%;
+}
+header .minimenu h5 {
+  color: white;
+}
+@media (max-width: 1000px) {
+  header .minimenu {
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+}
+
+#welcome {
+  height: 755px;
+  display: flex;
+  align-items: center;
+  background-image: url(Assets/header-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#welcome .textbox h2 {
+  margin-top: 70px;
+  font-size: 35px;
+  font-weight: 400;
+  color: white;
+}
+#welcome .textbox h2:hover {
+  cursor: text;
+}
+#welcome .textbox h1 {
+  font-size: 75px;
+  font-weight: 700;
+  color: white;
+  margin: 30px 0 60px;
+}
+#welcome .textbox h1:hover {
+  cursor: text;
+}
+#welcome .textbox .btn {
+  border-radius: 5px;
+  padding: 18px 53px;
+  color: white;
+  background-color: rgb(255, 200, 0);
+  font-weight: 700;
+  font-size: 20px;
+}
+#welcome .textbox .btn:hover {
+  cursor: pointer;
+  background-color: #9f832f;
+}
+
+#services .box h1 {
+  font-weight: 700;
+  font-size: 35px;
+}
+#services .box h1:hover {
+  cursor: text;
+}
+#services .box h3 {
+  font-size: 18px;
+  color: #686666;
+  margin: 20px 0 40px;
+}
+#services .box h3:hover {
+  cursor: text;
+}
+#services .textbox {
+  text-align: center;
+  padding: 30px;
+}
+#services .textbox ul {
+  display: flex;
+  justify-content: center;
+}
+#services .textbox ul .icon {
+  border-radius: 50%;
+  background-color: rgb(255, 200, 0);
+  color: white;
+  width: 130px;
+  height: 130px;
+}
+#services .textbox ul .icon i {
+  font-size: 63px;
+}
+#services .textbox h2 {
+  font-weight: 700;
+  font-size: 30px;
+  margin: 25px 0 15px;
+}
+#services .textbox h2:hover {
+  cursor: text;
+}
+#services .textbox p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #686666;
+}
+#services .textbox p:hover {
+  cursor: text;
+}
+
+#portofilo {
+  background-color: #f8f9fa;
+}
+#portofilo .textbox h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+#portofilo .textbox h1:hover {
+  cursor: text;
+}
+#portofilo .textbox h3 {
+  font-size: 18px;
+  color: #737382;
+  margin: 20px 0 60px;
+}
+#portofilo .textbox h3:hover {
+  cursor: text;
+}
+#portofilo .box {
+  background-color: white;
+  margin-bottom: 25px;
+  height: 420px;
+}
+#portofilo .box .textbox h2 {
+  margin: 22px 0 5px;
+  font-weight: 700;
+  font-size: 30px;
+}
+#portofilo .box .textbox h2:hover {
+  cursor: text;
+}
+#portofilo .box .textbox h4 {
+  color: #989494;
+  font-size: 18px;
+}
+#portofilo .box .textbox h4:hover {
+  cursor: text;
+}
+#portofilo .box .imgbox {
+  position: relative;
+}
+#portofilo .box .imgbox ul {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  opacity: 0;
+}
+#portofilo .box .imgbox ul:hover {
+  position: absolute;
+  background-color: #e6c23e;
+  opacity: 0.9;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+#portofilo .box .imgbox ul:hover i {
+  font-size: 90px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin: 100px 0 0;
+}
+
+#about .textbox h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+#about .textbox h1:hover {
+  cursor: text;
+}
+#about .textbox p {
+  font-size: 18px;
+  color: #737382;
+  margin: 20px 0 60px;
+}
+#about .textbox p:hover {
+  cursor: text;
+}
+#about .box {
+  margin: 0 0 118px;
+}
+#about .box .left, #about .box .right {
+  width: 566px;
+}
+#about .box .left h2, #about .box .left h3, #about .box .right h2, #about .box .right h3 {
+  font-weight: 600;
+  font-size: 25px;
+}
+#about .box .left h2:hover, #about .box .left h3:hover, #about .box .right h2:hover, #about .box .right h3:hover {
+  cursor: text;
+}
+#about .box .left h3, #about .box .right h3 {
+  margin: 15px 0;
+}
+#about .box .left h3:hover, #about .box .right h3:hover {
+  cursor: text;
+}
+#about .box .left p, #about .box .right p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #737382;
+}
+#about .box .left p:hover, #about .box .right p:hover {
+  cursor: text;
+}
+#about .box .left {
+  padding: 0 50px 0 140px;
+}
+#about .box .right {
+  padding: 0 140px 0 50px;
+}
+#about .box .imgbox {
+  border: 5px solid #d2d2d2;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+}
+#about .part {
+  border: 5px solid #d2d2d2;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+  background-color: #ffc800;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+}
+#about .part h5 {
+  line-height: 1.4;
+}
+#about .part h5:hover {
+  cursor: text;
+}
+
+#team {
+  background-color: #f8f9fa;
+}
+#team .textbox h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+#team .textbox h1:hover {
+  cursor: text;
+}
+#team .textbox h3 {
+  font-size: 18px;
+  color: #737382;
+  margin: 20px 0 60px;
+}
+#team .textbox h3:hover {
+  cursor: text;
+}
+#team .textbox p {
+  font-size: 18px;
+  color: #737382;
+  margin: 20px 0 60px;
+}
+#team .textbox p:hover {
+  cursor: text;
+}
+#team .box .imgbox {
+  border: 5px solid #d2d2d2;
+  border-radius: 50%;
+  width: 220px;
+  height: 220px;
+}
+#team .box .textbox h2 {
+  font-weight: 600;
+  font-size: 25px;
+  margin: 25px 0 10px;
+}
+#team .box .textbox h2:hover {
+  cursor: text;
+}
+#team .box .textbox h4 {
+  font-size: 18px;
+  color: #737382;
+}
+#team .box .textbox h4:hover {
+  cursor: text;
+}
+#team .box .textbox ul {
+  display: flex;
+  justify-content: center;
+}
+#team .box .textbox ul li i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #0b0b0b;
+  color: white;
+  border-radius: 50%;
+  margin: 20px 10px 30px;
+}
+#team .box .textbox ul li i:hover {
+  cursor: pointer;
+  background-color: #444444;
+}
+#team .wid {
+  width: 730px;
+  font-size: 18px;
+  color: #737382;
+  line-height: 1.4;
+}
+#team .wid:hover {
+  cursor: text;
+}
+
+#contact {
+  background-image: url(Assets/map-image.png);
+  background-color: #111111;
+  background-position: center center;
+}
+#contact .textbox h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white;
+}
+#contact .textbox h1:hover {
+  cursor: text;
+}
+#contact .textbox h3 {
+  font-size: 15px;
+  color: #817c7c;
+  margin: 20px 0 68px;
+}
+#contact .textbox h3:hover {
+  cursor: text;
+}
+#contact .minibox ul li input {
+  width: 635px;
+  height: 65px;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+#contact .btn {
+  border-radius: 5px;
+  padding: 18px 53px;
+  color: #d7d3d3;
+  background-color: #cb9d11;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 0.7;
+  margin-top: 30px;
+}
+#contact .textbox textarea {
+  border-radius: 10px;
+  padding: 20px 0 0 15px;
+  font-weight: 700;
+}
+#contact .textbox textarea:hover {
+  cursor: text;
+}
+
+#about2 .box .minibox {
+  display: flex;
+  margin-bottom: 100px;
+}
+#about2 .textbox h1 {
+  font-weight: 700;
+  font-size: 40px;
+}
+#about2 .textbox h1:hover {
+  cursor: text;
+}
+#about2 .textbox p {
+  font-size: 18px;
+  color: #737382;
+  margin: 20px 0 60px;
+}
+#about2 .textbox p:hover {
+  cursor: text;
+}
+#about2 .box {
+  margin: 0 0 118px;
+}
+#about2 .box .left, #about2 .box .right {
+  width: 566px;
+}
+#about2 .box .left h2, #about2 .box .left h3, #about2 .box .right h2, #about2 .box .right h3 {
+  font-weight: 600;
+  font-size: 25px;
+}
+#about2 .box .left h2:hover, #about2 .box .left h3:hover, #about2 .box .right h2:hover, #about2 .box .right h3:hover {
+  cursor: text;
+}
+#about2 .box .left h3, #about2 .box .right h3 {
+  margin: 15px 0;
+}
+#about2 .box .left h3:hover, #about2 .box .right h3:hover {
+  cursor: text;
+}
+#about2 .box .left p, #about2 .box .right p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #737382;
+}
+#about2 .box .left p:hover, #about2 .box .right p:hover {
+  cursor: text;
+}
+#about2 .box .left {
+  padding: 0 50px 0 140px;
+}
+#about2 .box .right {
+  padding: 0 140px 0 50px;
+}
+#about2 .box .imgbox {
+  border: 5px solid #d2d2d2;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+}
+#about2 .part {
+  border: 5px solid #d2d2d2;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+  background-color: #ffc800;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+}
+#about2 .part h5 {
+  line-height: 1.4;
+}
+#about2 .part h5:hover {
+  cursor: text;
+}/*# sourceMappingURL=style.css.map */
