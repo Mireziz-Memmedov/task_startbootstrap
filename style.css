@@ -95,7 +95,6 @@ header .minimenu h5 {
   cursor: pointer;
   background-color: #9f832f;
 }
-
 #services .box h1 {
   font-weight: 700;
   font-size: 35px;
@@ -165,7 +164,7 @@ header .minimenu h5 {
   cursor: text;
 }
 #portofilo .box {
-  background-color: white;
+  background-color: #ffffff;
   margin-bottom: 25px;
   height: 420px;
 }
@@ -206,11 +205,16 @@ header .minimenu h5 {
   cursor: pointer;
 }
 #portofilo .box .imgbox ul:hover i {
-  font-size: 90px;
+  font-size: 60px;
   display: flex;
   justify-content: center;
-  color: white;
-  margin: 100px 0 0;
+  color: #ffffff;
+  margin: 120px 0 0;
+}
+@media (max-width: 992px) {
+  #portofilo .box {
+    height: 350px;
+  }
 }
 
 #about .textbox h1 {
