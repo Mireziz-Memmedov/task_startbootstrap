@@ -48,7 +48,7 @@ header .minimenu {
 header .minimenu h5 {
   color: white;
 }
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   header .minimenu {
     display: block;
   }
@@ -409,6 +409,59 @@ header .minimenu h5 {
 #about2 .box .minibox {
   display: flex;
   margin-bottom: 100px;
+  margin: 0 0 118px;
+}
+#about2 .box .minibox .left, #about2 .box .minibox .right {
+  width: 566px;
+}
+#about2 .box .minibox .left h2, #about2 .box .minibox .left h3, #about2 .box .minibox .right h2, #about2 .box .minibox .right h3 {
+  font-weight: 600;
+  font-size: 25px;
+}
+#about2 .box .minibox .left h2:hover, #about2 .box .minibox .left h3:hover, #about2 .box .minibox .right h2:hover, #about2 .box .minibox .right h3:hover {
+  cursor: text;
+}
+#about2 .box .minibox .left h3, #about2 .box .minibox .right h3 {
+  margin: 15px 0;
+}
+#about2 .box .minibox .left h3:hover, #about2 .box .minibox .right h3:hover {
+  cursor: text;
+}
+#about2 .box .minibox .left p, #about2 .box .minibox .right p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #737382;
+}
+#about2 .box .minibox .left p:hover, #about2 .box .minibox .right p:hover {
+  cursor: text;
+}
+#about2 .box .minibox .left {
+  padding: 0 50px 0 140px;
+}
+#about2 .box .minibox .right {
+  padding: 0 140px 0 50px;
+}
+#about2 .box .minibox .imgbox {
+  border: 5px solid #d2d2d2;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+}
+#about2 .box .minibox .part {
+  border: 5px solid #d2d2d2;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+  background-color: #ffc800;
+  color: white;
+  font-weight: 600;
+  font-size: 22px;
+}
+#about2 .box .minibox .part h5 {
+  line-height: 1.4;
+}
+#about2 .box .minibox .part:hover {
+  cursor: text;
 }
 #about2 .textbox h1 {
   font-weight: 700;
@@ -423,60 +476,5 @@ header .minimenu h5 {
   margin: 20px 0 60px;
 }
 #about2 .textbox p:hover {
-  cursor: text;
-}
-#about2 .box {
-  margin: 0 0 118px;
-}
-#about2 .box .left, #about2 .box .right {
-  width: 566px;
-}
-#about2 .box .left h2, #about2 .box .left h3, #about2 .box .right h2, #about2 .box .right h3 {
-  font-weight: 600;
-  font-size: 25px;
-}
-#about2 .box .left h2:hover, #about2 .box .left h3:hover, #about2 .box .right h2:hover, #about2 .box .right h3:hover {
-  cursor: text;
-}
-#about2 .box .left h3, #about2 .box .right h3 {
-  margin: 15px 0;
-}
-#about2 .box .left h3:hover, #about2 .box .right h3:hover {
-  cursor: text;
-}
-#about2 .box .left p, #about2 .box .right p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #737382;
-}
-#about2 .box .left p:hover, #about2 .box .right p:hover {
-  cursor: text;
-}
-#about2 .box .left {
-  padding: 0 50px 0 140px;
-}
-#about2 .box .right {
-  padding: 0 140px 0 50px;
-}
-#about2 .box .imgbox {
-  border: 5px solid #d2d2d2;
-  border-radius: 50%;
-  width: 165px;
-  height: 165px;
-}
-#about2 .part {
-  border: 5px solid #d2d2d2;
-  border-radius: 50%;
-  width: 165px;
-  height: 165px;
-  background-color: #ffc800;
-  color: white;
-  font-weight: 600;
-  font-size: 22px;
-}
-#about2 .part h5 {
-  line-height: 1.4;
-}
-#about2 .part h5:hover {
   cursor: text;
 }/*# sourceMappingURL=style.css.map */
