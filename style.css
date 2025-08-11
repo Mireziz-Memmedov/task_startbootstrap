@@ -441,10 +441,12 @@ header .minimenu h5 {
   cursor: text;
 }
 #about2 .box .minibox .left {
+  text-align: end;
   padding: 0 50px 0 140px;
 }
 #about2 .box .minibox .right {
   padding: 0 140px 0 50px;
+  text-align: start;
 }
 #about2 .box .minibox .imgbox {
   border: 5px solid #d2d2d2;
@@ -452,7 +454,11 @@ header .minimenu h5 {
   width: 165px;
   height: 165px;
 }
-#about2 .box .minibox .part {
+#about2 .box .end {
+  display: flex;
+  justify-content: center;
+}
+#about2 .box .end .part {
   border: 5px solid #d2d2d2;
   border-radius: 50%;
   width: 165px;
@@ -462,10 +468,10 @@ header .minimenu h5 {
   font-weight: 600;
   font-size: 22px;
 }
-#about2 .box .minibox .part h5 {
+#about2 .box .end .part h5 {
   line-height: 1.4;
 }
-#about2 .box .minibox .part:hover {
+#about2 .box .end .part:hover {
   cursor: text;
 }
 #about2 .textbox h1 {
@@ -483,8 +489,33 @@ header .minimenu h5 {
 #about2 .textbox p:hover {
   cursor: text;
 }
-@media (min-width: 768px) {
-  #about2 .imgbox {
-    width: 50px;
+@media (max-width: 992px) {
+  #about2 .box .left-img {
+    flex-direction: row-reverse;
+  }
+  #about2 .box .minibox .left {
+    text-align: start;
+    padding: 0 40px 0 35px;
+  }
+  #about2 .box .minibox .right {
+    padding: 0 40px 0 35px;
+  }
+  #about2 .box .minibox .left, #about2 .box .minibox .right {
+    width: 550px;
+  }
+  #about2 .box .minibox .imgbox {
+    width: 100px;
+    height: 100px;
+  }
+  #about2 .box .end {
+    display: flex;
+    justify-content: flex-start;
+  }
+  #about2 .box .end .part {
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    text-align: start;
+    margin-left: 45px;
   }
 }/*# sourceMappingURL=style.css.map */
