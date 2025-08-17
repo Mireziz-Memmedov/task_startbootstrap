@@ -272,46 +272,55 @@ header .minimenu h5 {
 #about .textbox p:hover {
   cursor: text;
 }
-#about .box {
+#about .box .minibox {
   margin: 0 0 118px;
 }
-#about .box .left, #about .box .right {
+#about .box .minibox .left, #about .box .minibox .right {
   width: 566px;
 }
-#about .box .left h2, #about .box .left h3, #about .box .right h2, #about .box .right h3 {
+#about .box .minibox .left h2, #about .box .minibox .left h3, #about .box .minibox .right h2, #about .box .minibox .right h3 {
   font-weight: 600;
   font-size: 25px;
 }
-#about .box .left h2:hover, #about .box .left h3:hover, #about .box .right h2:hover, #about .box .right h3:hover {
+#about .box .minibox .left h2:hover, #about .box .minibox .left h3:hover, #about .box .minibox .right h2:hover, #about .box .minibox .right h3:hover {
   cursor: text;
 }
-#about .box .left h3, #about .box .right h3 {
+#about .box .minibox .left h3, #about .box .minibox .right h3 {
   margin: 15px 0;
 }
-#about .box .left h3:hover, #about .box .right h3:hover {
+#about .box .minibox .left h3:hover, #about .box .minibox .right h3:hover {
   cursor: text;
 }
-#about .box .left p, #about .box .right p {
+#about .box .minibox .left p, #about .box .minibox .right p {
   font-size: 18px;
   line-height: 1.5;
   color: #737382;
 }
-#about .box .left p:hover, #about .box .right p:hover {
+#about .box .minibox .left p:hover, #about .box .minibox .right p:hover {
   cursor: text;
 }
-#about .box .left {
+#about .box .minibox .left {
+  text-align: end;
   padding: 0 50px 0 140px;
 }
-#about .box .right {
+#about .box .minibox .right {
+  text-align: start;
   padding: 0 140px 0 50px;
 }
-#about .box .imgbox {
+#about .box .minibox .imgbox {
   border: 5px solid #d2d2d2;
   border-radius: 50%;
   width: 165px;
   height: 165px;
 }
-#about .part {
+#about .box .start {
+  display: flex;
+}
+#about .box .end {
+  display: flex;
+  justify-content: flex-end;
+}
+#about .box .part {
   border: 5px solid #d2d2d2;
   border-radius: 50%;
   width: 165px;
@@ -321,11 +330,39 @@ header .minimenu h5 {
   font-weight: 600;
   font-size: 22px;
 }
-#about .part h5 {
+#about .box .part h5 {
   line-height: 1.4;
 }
-#about .part h5:hover {
+#about .box .part h5:hover {
   cursor: text;
+}
+#about .box .last {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 300px) and (max-width: 992px) {
+  #about .box .minibox .imgbox {
+    width: 100px;
+    height: 100px;
+  }
+  #about .box .part {
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+  }
+  #about .box .left {
+    text-align: start;
+    padding: 0 140px 0 50px;
+  }
+  #about .box .start {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #about .box .last {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 25px;
+  }
 }
 
 #team {
@@ -426,7 +463,7 @@ header .minimenu h5 {
   cursor: text;
 }
 #contact .minibox ul li input {
-  width: 635px;
+  width: 100%;
   height: 65px;
   margin-bottom: 25px;
   font-weight: 700;
@@ -442,86 +479,12 @@ header .minimenu h5 {
   margin-top: 30px;
 }
 #contact .textbox textarea {
+  width: 100%;
+  height: 248px;
   border-radius: 10px;
   padding: 20px 0 0 15px;
   font-weight: 700;
 }
 #contact .textbox textarea:hover {
-  cursor: text;
-}
-@media (min-width: 992px) and (max-width: 1400px) {
-  #contact .minibox ul li input {
-    width: 500px;
-    height: 50px;
-  }
-}
-
-#about2 .textbox h1 {
-  font-weight: 700;
-  font-size: 40px;
-}
-#about2 .textbox h1:hover {
-  cursor: text;
-}
-#about2 .textbox p {
-  font-size: 18px;
-  color: #737382;
-  margin: 20px 0 60px;
-}
-#about2 .textbox p:hover {
-  cursor: tex;
-}
-#about2 .box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 100px;
-  margin: 0 0 118px;
-}
-#about2 .box .minibox {
-  display: flex;
-  justify-content: flex-start;
-}
-#about2 .box .imgbox {
-  border: 5px solid #d2d2d2;
-  border-radius: 50%;
-  width: 165px;
-  height: 165px;
-}
-#about2 .box .left h2, #about2 .box .left h3, #about2 .box .right h2, #about2 .box .right h3 {
-  font-weight: 600;
-  font-size: 25px;
-}
-#about2 .box .left h2:hover, #about2 .box .left h3:hover, #about2 .box .right h2:hover, #about2 .box .right h3:hover {
-  cursor: text;
-}
-#about2 .box .left h2 h3, #about2 .box .left h3 h3, #about2 .box .right h2 h3, #about2 .box .right h3 h3 {
-  margin: 15px 0;
-}
-#about2 .box .left h2 h3:hover, #about2 .box .left h3 h3:hover, #about2 .box .right h2 h3:hover, #about2 .box .right h3 h3:hover {
-  cursor: text;
-}
-#about2 .box .left h2 p, #about2 .box .left h3 p, #about2 .box .right h2 p, #about2 .box .right h3 p {
-  font-size: 18px;
-  line-height: 1.5;
-  color: #737382;
-}
-#about2 .box .left h2 p:hover, #about2 .box .left h3 p:hover, #about2 .box .right h2 p:hover, #about2 .box .right h3 p:hover {
-  cursor: text;
-}
-#about2 .box .part {
-  border: 5px solid #d2d2d2;
-  border-radius: 50%;
-  width: 165px;
-  height: 165px;
-  background-color: #ffc800;
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 22px;
-}
-#about2 .box .part h5 {
-  line-height: 1.4;
-}
-#about2 .box .part:hover {
   cursor: text;
 }/*# sourceMappingURL=style.css.map */
