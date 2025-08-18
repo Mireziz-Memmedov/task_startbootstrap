@@ -369,7 +369,7 @@ header .minimenu h5 {
     margin: 0 0 20px;
   }
   #about .box .minibox .left, #about .box .minibox .right {
-    width: 400px;
+    width: 0;
   }
   #about .box .minibox .imgbox {
     width: 60px;
