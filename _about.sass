@@ -63,23 +63,48 @@
         .last
             display: flex
             justify-content: center
-    @media (min-width: 300px) and ( max-width: 992px )
+    @media (min-width: 768px) and ( max-width: 992px )
         .box
             .minibox
                 .imgbox
-                    width: 100px
-                    height: 100px
-            .part
-                width: 100px
-                height: 100px
-                font-size: 16px
-            .left
-                text-align: start
-                padding: 0 140px 0 50px
+                    width: 80px
+                    height: 80px
+                .left
+                    text-align: start
+                    padding: 0 140px 0 50px
+                .part
+                    width: 80px
+                    height: 80px
+                    font-size: 14px
             .start
                 display: flex
                 flex-direction: row-reverse
             .last
                 display: flex
                 justify-content: flex-start
-                margin-left: 25px
+                padding: 0 140px 0 50px
+    @media (min-width: 300px) and ( max-width: 768px )
+        .box
+            .minibox
+                margin: 0 0 20px
+                .left, .right
+                    width: 400px
+                .imgbox
+                    width: 60px
+                    height: 60px
+                .left
+                    text-align: start
+                    padding: 0 60px 0 20px
+                .right
+                    padding: 0 60px 0 20px
+                .part
+                    width: 60px
+                    height: 60px
+                    font-size: 10px
+            .start
+                display: flex
+                flex-direction: row-reverse
+            .last
+                display: flex
+                justify-content: flex-start
+                padding: 0 0 0 60px

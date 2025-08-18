@@ -340,19 +340,19 @@ header .minimenu h5 {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 300px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
   #about .box .minibox .imgbox {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
-  #about .box .part {
-    width: 100px;
-    height: 100px;
-    font-size: 16px;
-  }
-  #about .box .left {
+  #about .box .minibox .left {
     text-align: start;
     padding: 0 140px 0 50px;
+  }
+  #about .box .minibox .part {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
   }
   #about .box .start {
     display: flex;
@@ -361,7 +361,40 @@ header .minimenu h5 {
   #about .box .last {
     display: flex;
     justify-content: flex-start;
-    margin-left: 25px;
+    padding: 0 140px 0 50px;
+  }
+}
+@media (min-width: 300px) and (max-width: 768px) {
+  #about .box .minibox {
+    margin: 0 0 20px;
+  }
+  #about .box .minibox .left, #about .box .minibox .right {
+    width: 400px;
+  }
+  #about .box .minibox .imgbox {
+    width: 60px;
+    height: 60px;
+  }
+  #about .box .minibox .left {
+    text-align: start;
+    padding: 0 60px 0 20px;
+  }
+  #about .box .minibox .right {
+    padding: 0 60px 0 20px;
+  }
+  #about .box .minibox .part {
+    width: 60px;
+    height: 60px;
+    font-size: 10px;
+  }
+  #about .box .start {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  #about .box .last {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 0 0 60px;
   }
 }
 
