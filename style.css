@@ -273,6 +273,7 @@ header .minimenu h5 {
   cursor: text;
 }
 #about .box .minibox {
+  position: relative;
   margin: 0 0 118px;
 }
 #about .box .minibox .left, #about .box .minibox .right {
@@ -308,10 +309,30 @@ header .minimenu h5 {
   padding: 0 140px 0 50px;
 }
 #about .box .minibox .imgbox {
+  position: absolute;
   border: 5px solid #d2d2d2;
   border-radius: 50%;
   width: 165px;
   height: 165px;
+  left: 570px;
+}
+#about .box .minibox .part {
+  position: absolute;
+  border: 5px solid #d2d2d2;
+  border-radius: 50%;
+  width: 165px;
+  height: 165px;
+  background-color: #ffc800;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 22px;
+  left: 570px;
+}
+#about .box .minibox .part h5 {
+  line-height: 1.4;
+}
+#about .box .minibox .part h5:hover {
+  cursor: text;
 }
 #about .box .start {
   display: flex;
@@ -320,81 +341,84 @@ header .minimenu h5 {
   display: flex;
   justify-content: flex-end;
 }
-#about .box .part {
-  border: 5px solid #d2d2d2;
-  border-radius: 50%;
-  width: 165px;
-  height: 165px;
-  background-color: #ffc800;
-  color: white;
-  font-weight: 600;
-  font-size: 22px;
-}
-#about .box .part h5 {
-  line-height: 1.4;
-}
-#about .box .part h5:hover {
-  cursor: text;
-}
 #about .box .last {
   display: flex;
   justify-content: center;
 }
-@media (min-width: 768px) and (max-width: 992px) {
-  #about .box .minibox .imgbox {
-    width: 80px;
-    height: 80px;
+@media (min-width: 1200px) and (max-width: 1400px) {
+  #about .box .minibox .left, #about .box .minibox .right {
+    width: 500px;
   }
-  #about .box .minibox .left {
-    text-align: start;
-    padding: 0 140px 0 50px;
+  #about .box .minibox .imgbox {
+    left: 470px;
   }
   #about .box .minibox .part {
-    width: 80px;
-    height: 80px;
-    font-size: 14px;
-  }
-  #about .box .start {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  #about .box .last {
-    display: flex;
-    justify-content: flex-start;
-    padding: 0 140px 0 50px;
+    left: 470px;
   }
 }
-@media (min-width: 300px) and (max-width: 768px) {
+@media (min-width: 992px) and (max-width: 1200px) {
+  #about .box .minibox .left, #about .box .minibox .right {
+    width: 500px;
+  }
+  #about .box .minibox .left {
+    padding: 0 150px 0 20px;
+  }
+  #about .box .minibox .right {
+    padding: 0 20px 0 150px;
+  }
+  #about .box .minibox .imgbox, #about .box .minibox .part {
+    left: 400px;
+    width: 140px;
+    height: 140px;
+  }
+  #about .box .minibox .part {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
   #about .box .minibox {
-    margin: 0 0 20px;
+    margin: 0 0 70px;
   }
   #about .box .minibox .left, #about .box .minibox .right {
-    width: 0;
+    width: 350px;
   }
-  #about .box .minibox .imgbox {
-    width: 60px;
-    height: 60px;
+  #about .box .minibox .left {
+    padding: 0 80px 0 20px;
+  }
+  #about .box .minibox .right {
+    padding: 0 20px 0 80px;
+  }
+  #about .box .minibox .imgbox, #about .box .minibox .part {
+    left: 300px;
+    width: 100px;
+    height: 100px;
+  }
+  #about .box .minibox .part {
+    font-size: 17px;
+  }
+}
+@media (min-width: 200px) and (max-width: 768px) {
+  #about .box .minibox {
+    margin: 0 0 30px;
   }
   #about .box .minibox .left {
     text-align: start;
-    padding: 0 60px 0 20px;
+    padding: 0 0 0 90px;
   }
   #about .box .minibox .right {
-    padding: 0 60px 0 20px;
+    padding: 0 20px 0 80px;
+  }
+  #about .box .minibox .imgbox, #about .box .minibox .part {
+    left: 0;
+    width: 70px;
+    height: 70px;
   }
   #about .box .minibox .part {
-    width: 60px;
-    height: 60px;
-    font-size: 10px;
+    font-size: 13px;
   }
   #about .box .start {
     display: flex;
     flex-direction: row-reverse;
-  }
-  #about .box .last {
-    display: flex;
-    justify-content: flex-start;
-    padding: 0 0 0 60px;
   }
 }
 

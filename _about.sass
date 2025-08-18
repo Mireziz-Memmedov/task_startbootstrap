@@ -13,6 +13,7 @@
                 cursor: text
     .box
         .minibox
+            position: relative
             margin: 0 0 118px
             .left, .right
                 width: 566px
@@ -38,73 +39,90 @@
                 text-align: start
                 padding: 0 140px 0 50px
             .imgbox
+                position: absolute
                 border: 5px solid #d2d2d2
                 border-radius: 50%
                 width: 165px
                 height: 165px
+                left: 570px
+            .part
+                position: absolute
+                border: 5px solid #d2d2d2
+                border-radius: 50%
+                width: 165px
+                height: 165px
+                background-color: #ffc800
+                color: #ffffff
+                font-weight: 600
+                font-size: 22px
+                left: 570px
+                h5
+                    line-height: 1.4
+                    &:hover
+                        cursor: text
         .start
             display: flex
         .end
             display: flex
             justify-content: flex-end
-        .part
-            border: 5px solid #d2d2d2
-            border-radius: 50%
-            width: 165px
-            height: 165px
-            background-color: #ffc800
-            color: #ffff
-            font-weight: 600
-            font-size: 22px
-            h5
-                line-height: 1.4
-                &:hover
-                    cursor: text
         .last
             display: flex
             justify-content: center
+    @media (min-width: 1200px) and ( max-width: 1400px )
+        .box
+            .minibox
+                .left, .right
+                    width: 500px
+                .imgbox
+                    left: 470px
+                .part
+                    left: 470px
+    @media (min-width: 992px) and ( max-width: 1200px )
+        .box
+            .minibox
+                .left, .right
+                    width: 500px
+                .left
+                    padding: 0 150px 0 20px
+                .right
+                    padding: 0 20px 0 150px
+                .imgbox, .part
+                    left: 400px
+                    width: 140px
+                    height: 140px
+                .part
+                    font-size: 20px
     @media (min-width: 768px) and ( max-width: 992px )
         .box
             .minibox
-                .imgbox
-                    width: 80px
-                    height: 80px
+                margin: 0 0 70px
+                .left, .right
+                    width: 350px
                 .left
-                    text-align: start
-                    padding: 0 140px 0 50px
+                    padding: 0 80px 0 20px
+                .right
+                    padding: 0 20px 0 80px
+                .imgbox, .part
+                    left: 300px
+                    width: 100px
+                    height: 100px
                 .part
-                    width: 80px
-                    height: 80px
-                    font-size: 14px
-            .start
-                display: flex
-                flex-direction: row-reverse
-            .last
-                display: flex
-                justify-content: flex-start
-                padding: 0 140px 0 50px
-    @media (min-width: 300px) and ( max-width: 768px )
+                    font-size: 17px
+    @media (min-width: 200px) and ( max-width: 768px )
         .box
             .minibox
-                margin: 0 0 20px
-                .left, .right
-                    width: 0
-                .imgbox
-                    width: 60px
-                    height: 60px
+                margin: 0 0 30px
                 .left
                     text-align: start
-                    padding: 0 60px 0 20px
+                    padding: 0 0 0 90px
                 .right
-                    padding: 0 60px 0 20px
+                    padding: 0 20px 0 80px
+                .imgbox, .part
+                    left: 0
+                    width: 70px
+                    height: 70px
                 .part
-                    width: 60px
-                    height: 60px
-                    font-size: 10px
+                    font-size: 13px
             .start
                 display: flex
                 flex-direction: row-reverse
-            .last
-                display: flex
-                justify-content: flex-start
-                padding: 0 0 0 60px
