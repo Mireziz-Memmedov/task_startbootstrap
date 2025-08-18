@@ -12,7 +12,6 @@ body {
 
 section {
   padding: 50px 0;
-  overflow-y: scroll;
 }
 
 header {
@@ -327,6 +326,7 @@ header .minimenu h5 {
   font-weight: 600;
   font-size: 22px;
   left: 570px;
+  top: -20px;
 }
 #about .box .minibox .part h5 {
   line-height: 1.4;
