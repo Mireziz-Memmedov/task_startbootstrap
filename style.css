@@ -499,6 +499,7 @@ header .minimenu h5 {
 }
 
 #contact {
+  padding: 80px 0;
   background-image: url(Assets/map-image.png);
   background-color: #111111;
   background-position: center center;
@@ -533,7 +534,7 @@ header .minimenu h5 {
   font-weight: 700;
   font-size: 20px;
   opacity: 0.7;
-  margin: 30px 0 50px;
+  margin-top: 30px;
 }
 #contact .textbox textarea {
   width: 100%;
@@ -546,6 +547,11 @@ header .minimenu h5 {
   cursor: text;
 }
 
+footer .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 footer .menu ul {
   display: flex;
   justify-content: center;
@@ -567,9 +573,15 @@ footer .menu ul li i:hover {
 }
 footer .menu nav a {
   color: #131212;
-  margin-left: 30px;
+  margin-left: 20px;
   font-size: 16px;
 }
 footer .menu nav a:hover {
   cursor: pointer;
+}
+@media (max-width: 992px) {
+  footer .menu {
+    flex-direction: column;
+    padding: 30px 0;
+  }
 }/*# sourceMappingURL=style.css.map */
