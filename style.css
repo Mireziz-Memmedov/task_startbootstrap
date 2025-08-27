@@ -552,6 +552,9 @@ footer .menu {
   justify-content: space-between;
   align-items: center;
 }
+footer .menu h5 {
+  cursor: text;
+}
 footer .menu ul {
   display: flex;
   justify-content: center;
