@@ -584,4 +584,16 @@ footer .menu nav a:hover {
     flex-direction: column;
     padding: 30px 0;
   }
+}
+
+#logo .imgbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo .imgbox img {
+  height: 50px;
+}
+#logo .imgbox img:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
