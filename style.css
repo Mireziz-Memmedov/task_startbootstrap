@@ -599,4 +599,14 @@ footer .menu nav a:hover {
 }
 #logo .imgbox img:hover {
   cursor: pointer;
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #logo .imgbox {
+    padding: 12px 0;
+  }
+}
+@media (min-width: 300px) and (max-width: 576px) {
+  #logo .imgbox {
+    padding: 12px 0;
+  }
 }/*# sourceMappingURL=style.css.map */
