@@ -20,6 +20,7 @@ header
                 color: #c0a916
                 cursor: pointer
     .minimenu
+        position: relative
         display: none
         background-color: #080808
         border: 4px solid #767373
@@ -27,9 +28,28 @@ header
         h5
             color: #ffff
         &:hover
+        .dropdown
+            display: none
+            position: absolute
+            background-color: #212529
+            min-width: 80px
+            box-shadow: 0 2px 6px #7c7c7c
+            top: 100%
+            left: 0
+            z-index: 100
+            .option
+                display: flex
+                flex-direction: column
+                a
+                    color: #ffffff
+                    border: 1px solid #8c8c8c
+                    margin: 2px
+                    &:hover
+                        background-color: #40454a
+                        cursor: pointer
+                        color: #ff0000
     @media ( max-width: 992px )
         .minimenu
             display: block
         nav
             display: none
-            

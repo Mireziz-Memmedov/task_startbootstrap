@@ -39,6 +39,7 @@ header nav a:hover {
   cursor: pointer;
 }
 header .minimenu {
+  position: relative;
   display: none;
   background-color: #080808;
   border: 4px solid #767373;
@@ -46,6 +47,30 @@ header .minimenu {
 }
 header .minimenu h5 {
   color: white;
+}
+header .minimenu .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #212529;
+  min-width: 80px;
+  box-shadow: 0 2px 6px #7c7c7c;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+}
+header .minimenu .dropdown .option {
+  display: flex;
+  flex-direction: column;
+}
+header .minimenu .dropdown .option a {
+  color: #ffffff;
+  border: 1px solid #8c8c8c;
+  margin: 2px;
+}
+header .minimenu .dropdown .option a:hover {
+  background-color: #40454a;
+  cursor: pointer;
+  color: #ff0000;
 }
 @media (max-width: 992px) {
   header .minimenu {
@@ -91,8 +116,10 @@ header .minimenu h5 {
   font-size: 20px;
 }
 #welcome .textbox .btn:hover {
-  cursor: pointer;
   background-color: #9f832f;
+}
+#welcome .textbox .btn:hover a {
+  cursor: pointer;
 }
 @media (max-width: 768px) {
   #welcome .textbox h2 {
